@@ -3,7 +3,7 @@ sub init()
     m.top.functionName = "setData"
 end sub
 
-function setData() as object
+sub setData() as object
     data = m.top.content
 
     if(data <> invalid)
@@ -25,7 +25,7 @@ function setData() as object
         
         m.top.validatedContent = content
     end if
-end function
+end sub
 
 function validateData(data)
     item = {}
@@ -37,7 +37,6 @@ function validateData(data)
     item.title =  isValid(data.title)
     item.startTime = isValid(data.interactiveAd.strtTime)
     item.duration = isValid(data.interactiveAd.duration)
-
     'TODO: validate the subarray -> data.interactiveAd.url
 
     return item

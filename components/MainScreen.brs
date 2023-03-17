@@ -1,10 +1,11 @@
 sub init()
     m.context = m.top
-    m.context.setFocus(true)
+    
     m.mainTitle = m.context.findNode("mainTitle")
     m.itemsContainer = m.context.findNode("itemsContainer")
     m.backgroundMainTitle = m.context.findNode("backgroundMainTitle")
     m.boder = m.context.findNode("border")
+    m.itemsContainerAnimation = m.context.findNode("itemsContainerAnimation")
 
     m.mainTitle.font.size = 45
     m.mainTitle.color = "0x72DEFF"
@@ -14,10 +15,9 @@ sub init()
     m.listedItems = []
     m.indexFocus = 0
 
-    m.itemsContainerAnimation = m.context.findNode("itemsContainerAnimation")
-
     m.vectorInterpotator = m.context.findNode("vectorInterpotator")
     m.keyValue = [[0,0], [0,0]]
+    m.context.setFocus(true)
 end sub
 
 sub onContentUpdate()

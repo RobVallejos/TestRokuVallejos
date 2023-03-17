@@ -3,16 +3,14 @@ sub init()
     m.border = m.context.findNode("border")
     m.itemPoster = m.context.findNode("itemPoster")
     m.itemPoster.height = m.context.height
-
     m.title = m.context.findNode("title")
+    m.subtitle = m.context.findNode("subtitle")
+    m.description = m.context.findNode("description")
+
     m.title.color = "0xFFFFFF"
     m.title.font.size=25
-    
-    m.subtitle = m.context.findNode("subtitle")
     m.subtitle.color = "0x1F4E5F"
     m.subtitle.font.size=18
-
-    m.description = m.context.findNode("description")
     m.description.color = "0xFFFFFF"
     m.description.font.size=16
 
