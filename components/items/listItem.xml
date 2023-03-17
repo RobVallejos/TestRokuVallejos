@@ -12,8 +12,9 @@
   <script type="text/brightscript" uri="pkg:/components/items/listItem.brs" />
 
   <children>
-      <Poster id="itemPoster" width="290" translation="[4, -22]"/>   
-
+      <Poster id="itemPoster" width="290" translation="[4, -22]"/>
+      <Poster id="frontFade" width="290" height="132" translation="[4, 0]"/>   
+      <Label id="duration" translation="[14, 98]"/>  
       <Border id="border" translation="[0, -4]"/>
 
       <Group>
